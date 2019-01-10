@@ -1,0 +1,42 @@
+﻿@model WebApplication5.Models.SubjectToProf
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SubjectToProf</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.rating)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rating)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Professor.ProfessorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Professor.ProfessorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject1.SubjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject1.SubjectName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ClassID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
